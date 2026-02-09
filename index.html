@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:url"                content="https://coachkhomestreak.com" />
+        <meta property="og:type"               content="website" />
+        <meta property="og:title"              content="Coach K's live-updated Home Streak" />
+        <meta property="og:description"        content="This page is the up-to-the-minute live status of Coach K's current streak on the court named after him." />
+        <meta property="og:image"              content="https://coachkhomestreak.com/CoachK.jpg" />
+        <meta property="og:image:alt"          content="Mike Kyrzewski,image via Wikipedia." />
+        <meta property="fb:app_id"             content="958672977548947" />
+        
+        <link rel="icon" type="image/svg+xml" href="/coach-k-logo.svg" />
+        <link rel="alternate icon" href="/favicon.ico" />
+        
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+                background: linear-gradient(135deg, #00009c 0%, #001A57 50%, #003366 100%);
+                min-height: 100vh;
+                padding: 20px;
+                color: #333;
+                line-height: 1.6;
+            }
+
+            .container {
+                max-width: 900px;
+                margin: 0 auto;
+                background: white;
+                border-radius: 20px;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+                overflow: hidden;
+            }
+
+            .header {
+                background: linear-gradient(135deg, #00009c 0%, #001A57 50%, #003366 100%);
+                color: white;
+                padding: 50px 30px;
+                text-align: center;
+                position: relative;
+            }
+
+            .logo-container {
+                margin: 0 auto 30px;
+                max-width: 300px;
+                background: white;
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            }
+
+            .logo-container img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .header-content {
+                position: relative;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+                margin-bottom: 10px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            }
+
+            .main-content {
+                padding: 40px 30px;
+            }
+
+            .streak-card {
+                background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+                border-left: 5px solid #dc2626;
+                border-radius: 10px;
+                padding: 25px;
+                margin: 25px 0;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .streak-card p {
+                font-size: 1.4rem;
+                margin: 0;
+                color: #333;
+            }
+
+            .streak {
+                color: #dc2626;
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+
+            .timestamp {
+                font-size: 1.1rem;
+                color: #666;
+                margin-bottom: 20px;
+                padding: 15px;
+                background: #f8f9fa;
+                border-radius: 8px;
+            }
+
+            .other-streaks {
+                margin-top: 30px;
+            }
+
+            .other-streaks p {
+                font-size: 1.2rem;
+                color: #333;
+                margin-bottom: 15px;
+                font-weight: 600;
+            }
+
+            .other-streaks ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .other-streaks li {
+                background: #f8f9fa;
+                padding: 15px 20px;
+                margin: 10px 0;
+                border-radius: 8px;
+                font-size: 1.1rem;
+                border-left: 4px solid #00009c;
+                transition: transform 0.2s, box-shadow 0.2s;
+            }
+
+            .other-streaks li:hover {
+                transform: translateX(5px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+
+            .social-share {
+                margin-top: 40px;
+                padding: 25px;
+                background: #f8f9fa;
+                border-radius: 10px;
+                text-align: center;
+            }
+
+            .tweetlink {
+                font-size: 1.1rem;
+                margin-bottom: 15px;
+            }
+
+            .tweetlink a {
+                color: #00009c;
+                text-decoration: none;
+                font-weight: 600;
+                padding: 12px 24px;
+                background: white;
+                border: 2px solid #00009c;
+                border-radius: 8px;
+                display: inline-block;
+                transition: all 0.3s;
+            }
+
+            .tweetlink a:hover {
+                background: #00009c;
+                color: white;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            .fbshare {
+                margin: 15px 0;
+            }
+
+            @media (max-width: 768px) {
+                h1 {
+                    font-size: 1.8rem;
+                }
+
+                .streak-card p {
+                    font-size: 1.1rem;
+                }
+
+                .streak {
+                    font-size: 1.2rem;
+                }
+
+                .main-content {
+                    padding: 25px 20px;
+                }
+
+                .header {
+                    padding: 30px 20px;
+                }
+
+                .logo-container {
+                    max-width: 200px;
+                }
+            }
+        </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ES0BMGQ8WM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ES0BMGQ8WM');
+    </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="logo-container">
+                    <img src="/coach-k-logo.svg" alt="Coach K 1K Logo" />
+                </div>
+                <div class="header-content">
+                    <h1>Coach K's Current Home Streak</h1>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <div class="timestamp">
+                    As of <span id='date-time'></span>
+                </div>
+
+                <div class="streak-card">
+                    <p>Coach Mike Krzyzewski is on a <span class="streak">1-game losing streak</span> on the court named after him.</p>
+                </div>
+
+                <div class="other-streaks">
+                    <p>Other notable current streaks:</p>
+                    <ul>
+                        <li>Away games: <span class="streak">1 loss</span></li>
+                        <li>Games against primary rival: <span class="streak">2 losses</span></li>
+                        <li>NCAA tournament games: <span class="streak">1 loss</span></li>
+                        <li>ACC Tournament games: <span class="streak">1 loss</span></li>
+                    </ul>
+                </div>
+                
+                <div class="social-share">
+                    <div class="tweetlink">
+                        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcoachkhomestreak.com&text=Check%20out%20Coach%20K%27s%20current%20streak%20at%20home%21%20%23GDTBATH">Share the streak on Twitter</a>
+                    </div>
+                    <div class="fbshare">
+                        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fcoachkhomestreak.com&layout=button&size=small&appId=178502380219784&width=67&height=20" width="67" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function updateDateTime() {
+                var dt = new Date();
+                var options = { 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric', 
+                    hour: 'numeric', 
+                    minute: '2-digit',
+                    timeZoneName: 'short'
+                };
+                document.getElementById('date-time').innerHTML = dt.toLocaleString('en-US', options);
+            }
+            updateDateTime();
+            setInterval(updateDateTime, 60000); // Update every minute
+        </script>
+    </body>
+</html>

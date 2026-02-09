@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<svg width="357" height="441" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_5">
+   <g id="svg_11">
+    <rect fill="#00009c" stroke="#000000" stroke-width="0" x="5" y="363" width="150" height="73" id="svg_1"/>
+    <rect fill="#00009c" stroke="#000000" stroke-width="0" x="196" y="5" width="150" height="73" id="svg_2"/>
+    <rect fill="#00009c" stroke="#000000" stroke-width="0" x="202" y="363" width="150" height="73" id="svg_3"/>
+    <rect fill="#00009c" stroke="#000000" stroke-width="0" stroke-linejoin="null" stroke-linecap="null" x="35" y="50" width="90" height="315" id="svg_4"/>
+    <rect fill="#00009c" stroke="#000000" stroke-width="0" stroke-linejoin="null" stroke-linecap="null" x="6" y="50" width="30" height="65" id="svg_6"/>
+    <rect id="svg_8" height="45" width="60" y="6" x="65" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#00009c"/>
+    <rect fill="#00009c" stroke="#000000" stroke-width="0" stroke-linejoin="null" stroke-linecap="null" x="194.25369" y="163.06097" width="90" height="241.94634" id="svg_7" transform="rotate(-25.656999588012695 239.25369262695307,284.0341491699218) "/>
+    <path fill="#00009c" stroke="#000000" stroke-width="0" stroke-linejoin="null" stroke-linecap="null" transform="rotate(43.652000427246094 227.6668090820313,118.29673767089842) " d="m192.666794,20.73774l70.000015,0l0,195.118004l-70.000015,0l0,-195.118004z" id="svg_9"/>
+    <path transform="rotate(90 183.37576293945312,215.42495727539065) " id="svg_10" d="m132.675781,263.798218l0,-96.746521l101.399979,96.746521l-101.399979,0z" stroke-width="0" stroke="#000000" fill="#00009c"/>
+   </g>
+   <path fill="#00009c" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" transform="rotate(-36.71419906616211 53.43471908569335,52.04882049560546) " d="m16.634581,22.04882l73.600283,0l0,60l-73.600283,0l0,-60z" id="svg_21"/>
+  </g>
+ </g>
+</svg>
